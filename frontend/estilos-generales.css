@@ -1,0 +1,87 @@
+
+
+#salida{
+    display: none;
+      position: fixed;
+
+}
+
+.circulo {
+
+ width: 30px;
+ height: 30px;
+margin-right: 10px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+font-size: 30px;
+  
+
+}
+
+
+
+
+#contenedor_DB{
+
+  margin-top: 9%;
+  position:relative;
+}
+
+
+#drop-area {
+    border: 2px dashed #53eead;
+    border-radius: 10px;
+    width: 40%;
+    height: 200px;
+    padding: 10%;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  #input_imagen {
+    display: none;
+    
+  }
+
+  .letra_drop{
+
+    color:hsl(171, 100%, 96%);
+    font-size: large;
+    
+   
+
+  }
+
+
+  #boton_agregar_img{
+
+    margin-top: 2.5%;
+
+  }
+
+
+  #loadingContainer {
+    z-index: 1050;
+}
+
+#loadingBar {
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+.enlace-descarga{
+
+ margin-top: 5%;
+ margin-left: 2%;
+
+}
