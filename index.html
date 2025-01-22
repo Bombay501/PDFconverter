@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar y Recortar Imágenes en PDF</title>
+  
+    <link rel="stylesheet"  href="css/bulma.min.css">
+    <link href="./css/modal.css" rel="stylesheet" type="text/css">
+    <link href="./css/estilos-generales.css" rel="stylesheet" type="text/css">
+  
+
+  
+</head>
+<body>
+
+ 
+
+
+
+
+    <div align="center" >    
+       
+      <div class="notification is-warning alert1 " id="AlertNoImg">
+        <button class="delete" id="modal_close" onclick="closeModalAlert(AlertNoImg)"></button>
+
+           <h3>ERROR</h3> 
+            <span class="mensaje_alert">Archivos no válidos,carga imágenes jpg,png o heic  </span>
+    
+    
+         </div>
+          
+         <div class="notification is-warning alert1 " id="AlertImputVoid">
+          <button class="delete" id="modal_close" onclick="closeModalAlert(AlertImputVoid)"></button>
+  
+             <h3>ERROR</h3> 
+              <span class="mensaje_alert">No subiste nada, carga imagenes  </span>
+      
+      
+           </div>
+         
+ 
+            
+          
+           <div id="contenedor_DB">
+           
+            <form id="uploadForm">
+           
+              <button type="submit"  id="convertirPDF" class="button is-info is-rounded is-large"> <!--- <span> <p class="circulo has-background-danger has-text-black">3  </p></span> -->convertir PDF</button>
+
+             <div id="drop-area" >
+              
+
+
+
+                <!--<span> <p class="circulo has-background-danger has-text-black">1  </p></span>-->
+                  <span class="letra_drop">Pincha aquí y selecciona las imagenes que quieres añadir a un PDF</span>
+
+                 <input type="file" id="input_imagen" name="input_imagen"  class="input_style "  accept="multiple, image/jpeg, image/png, image/heic"   required  multiple>
+
+
+
+                 
+             </div>
+               
+            </form> 
+           </div>
+          
+           <!--   barra de carga de proceso    --> 
+           <div id="loadingContainer" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-text-centered">
+              <div>
+                <p>Convirtiendo imágenes a PDF...</p>
+                <progress class="progress is-primary" id="loadingBar" value="0" max="100"></progress>
+              </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          
+
+
+        <!--  <div id="image-preview"></div> -->
+
+
+
+   
+
+        <div id="downloadLinks"></div>  
+     
+         
+        </div>
+
+       
+     </div>
+
+
+     
+   
+   
+ 
+    <script src="varias_img.js"></script>
+    
+
+    </body>
+    </html>
+
+
+    
