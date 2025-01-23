@@ -42,7 +42,7 @@ document.getElementById('uploadForm').onsubmit = async (e) => {
     try {
         await simulateProgress();
 
-        const response = await fetch('http://localhost:3000/upload', {
+        const response = await fetch('https://bombay501.github.io/PDFconverter/upload', {
             method: 'POST',
             body: formData,
         });
