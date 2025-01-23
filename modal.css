@@ -1,0 +1,41 @@
+
+
+ /* Estilos para el modal */
+
+
+.alert1{
+ 
+  width: 50%;
+display:grid;
+place-items: center;
+display:none;
+transition: opacity 0.3s ease;
+
+
+
+
+
+}
+
+.modal_show{
+
+  display: block;
+  
+
+}
+ 
+
+.modal_close{
+
+  display:none;
+
+}
+
+
+.mensaje_alert{
+
+  margin:0;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
